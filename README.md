@@ -1,4 +1,5 @@
 # React Project
+
 From tutorial by Ankita Kulkarni https://www.youtube.com/watch?v=JB1aKAoj2o0
 
 # React + TypeScript + Vite (Vite default)
