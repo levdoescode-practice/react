@@ -4,16 +4,42 @@ import { useEffect, useState } from "react";
 
 export default function HomePage() {
     const [recipes, setRecipes] = useState([]);
+    const [filteredRecipes, setFilteredRecipes] = useState([]);
+    const [badge, setBadge] = useState("");
+
+    const getAllRecipes = async () => {
+        const response = await fetch("https://dummyjson.com/recipes");
+        const data = await response.json();
+        return data.recipes;
+    };
+
     useEffect(() => {
-        const getRecipes = async() => {
-            const response = await fetch('https://dummyjson.com/recipes');
-            const data = await response.json();
-            if (data) {
-                setRecipes(data.recipes);
+        const getRecipes = async () => {
+            const recipes = await getAllRecipes();
+            if (recipes) {
+                setRecipes(recipes);
             }
         };
+
         getRecipes();
     }, []);
+
+    useEffect(() => {
+        if (badge) {
+            const getFilteredRecipes = async () => {
+                const recipes = await getAllRecipes();
+                if (recipes) {
+                    const filtered = recipes.filter((recipe) => recipe.cuisine === badge);
+                    if (badge === "All") {
+                        console.log({filtered})
+                    }
+                    setFilteredRecipes(filtered);
+                }
+            };
+            getFilteredRecipes();
+        }
+    }, [badge]);
+
     const cuisines: Array<string> = [
         "All",
         "Asian",
@@ -26,6 +52,12 @@ export default function HomePage() {
         "Mexican",
         "Pakistani",
     ];
+
+    const handleOnClick = (e: React.MouseEvent<HTMLDivElement>, cuisine: string) => {
+        e.preventDefault();
+        setBadge(cuisine);
+    };
+
     return (
         <div className="xl:px-24 px-10">
             <div className="my-12">
@@ -34,6 +66,7 @@ export default function HomePage() {
                         key={`${cuisine}-${idx}`}
                         variant={"outline"}
                         className="border-orange-800 text-gray-900 text-lg mx-2 my-1 hover:cursor-pointer bg-orange-50 hover:scale-110 ease-in duration-200"
+                        onClick={(e) => handleOnClick(e, cuisine)}
                     >
                         {cuisine}
                     </Badge>
@@ -41,7 +74,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-x-10 gap-y-20 xl:gap-y-32 xl:pt-32 pt-12 pb-40">
-                {recipes.map((recipe, idx) => (
+                {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe, idx) => (
                     <Card
                         key={`${recipe.name}-${idx}`}
                         className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
