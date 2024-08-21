@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { RecipeType } from "@/types";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -29,9 +30,9 @@ export default function HomePage() {
             const getFilteredRecipes = async () => {
                 const recipes = await getAllRecipes();
                 if (recipes) {
-                    const filtered = recipes.filter((recipe) => recipe.cuisine === badge);
+                    const filtered = recipes.filter((recipe: RecipeType) => recipe.cuisine === badge);
                     if (badge === "All") {
-                        console.log({filtered})
+                        console.log({ filtered });
                     }
                     setFilteredRecipes(filtered);
                 }
@@ -74,7 +75,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-x-10 gap-y-20 xl:gap-y-32 xl:pt-32 pt-12 pb-40">
-                {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe, idx) => (
+                {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe: RecipeType , idx: number) => (
                     <Card
                         key={`${recipe.name}-${idx}`}
                         className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
