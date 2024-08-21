@@ -1,7 +1,19 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useState } from "react";
 
 export default function HomePage() {
+    const [recipes, setRecipes] = useState([]);
+    useEffect(() => {
+        const getRecipes = async() => {
+            const response = await fetch('https://dummyjson.com/recipes');
+            const data = await response.json();
+            if (data) {
+                setRecipes(data.recipes);
+            }
+        };
+        getRecipes();
+    }, []);
     const cuisines: Array<string> = [
         "All",
         "Asian",
@@ -13,12 +25,6 @@ export default function HomePage() {
         "Mediterranean",
         "Mexican",
         "Pakistani",
-    ];
-    const recipes = [
-        { id: 1, name: "Chicken Alfredo", cuisine: "Italian", servings: 4, prepTimeMinutes: 10, cookTimeMinutes: 20 },
-        { id: 2, name: "Chicken Biryani", cuisine: "Pakistani", servings: 6, prepTimeMinutes: 20, cookTimeMinutes: 30 },
-        { id: 3, name: "Chicken Curry", cuisine: "Indian", servings: 4, prepTimeMinutes: 15, cookTimeMinutes: 25 },
-        { id: 4, name: "Chicken Fajitas", cuisine: "Mexican", servings: 4, prepTimeMinutes: 10, cookTimeMinutes: 20 },
     ];
     return (
         <div className="xl:px-24 px-10">
@@ -40,7 +46,15 @@ export default function HomePage() {
                         key={`${recipe.name}-${idx}`}
                         className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
                     >
-                        <CardHeader></CardHeader>
+                        <CardHeader>
+                            <img
+                                src={recipe.image}
+                                alt={recipe.name}
+                                width={500}
+                                height={500}
+                                className="bg-cover rounded-md shadow-xl"
+                            />
+                        </CardHeader>
                         <CardContent>
                             <CardTitle className="uppercase lg:text-3xl relative font-bold line-clamp-2">
                                 {recipe.name}
