@@ -54,7 +54,7 @@ export default function HomePage() {
         "Pakistani",
     ];
 
-    const handleOnClick = (e: React.MouseEvent<HTMLDivElement>, cuisine: string) => {
+    const handleOnClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>, cuisine: string) => {
         e.preventDefault();
         setBadge(cuisine);
     };
@@ -67,7 +67,7 @@ export default function HomePage() {
                         key={`${cuisine}-${idx}`}
                         variant={"outline"}
                         className="border-orange-800 text-gray-900 text-lg mx-2 my-1 hover:cursor-pointer bg-orange-50 hover:scale-110 ease-in duration-200"
-                        onClick={(e) => handleOnClick(e, cuisine)}
+                        onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => handleOnClick(e, cuisine)}
                     >
                         {cuisine}
                     </Badge>
