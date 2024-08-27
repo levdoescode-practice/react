@@ -76,9 +76,8 @@ export default function HomePage() {
 
             <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-x-10 gap-y-20 xl:gap-y-32 xl:pt-32 pt-12 pb-40">
                 {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe: RecipeType, idx: number) => (
-                    <a href={`/recipes/${recipe.id}`}>
+                    <a href={`/recipes/${recipe.id}`} key={`${recipe.name}-${idx}`}>
                         <Card
-                            key={`${recipe.name}-${idx}`}
                             className="flex flex-col bg-orange-50 hover:scale-105 ease-in duration-200 xl:min-h-[600px] fancyGradient"
                         >
                             <CardHeader>
