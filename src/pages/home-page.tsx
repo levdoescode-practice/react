@@ -94,7 +94,7 @@ export default function HomePage() {
                                     {recipe.name}
                                 </CardTitle>
                             </CardContent>
-                            <CardFooter className="flex items-start gap-2 lg:gap-12 lg:flex-row flex-col">
+                            <CardFooter className="flex items-start gap-2 lg:content-between lg:flex-row flex-col">
                                 <div className="flex flex-col">
                                     <p className="text-lg">Serves</p>
                                     <p className="text-gray-800">{recipe.servings}</p>
