@@ -8,7 +8,7 @@ Simpler React projects with one or a few pages.
 * Data from [dummyjson.com](https://dummyjson.com/recipes/)
 
 *Images below are static links only
-<div>
+<div align="center">
     <img src="./media/path-001/path-001-01.png" align="center" alt="Recipe list" />
 </div>
 
