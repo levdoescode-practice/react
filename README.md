@@ -7,60 +7,23 @@ Simpler React projects with one or a few pages.
 * Filter by category and individual recipe pages.
 * Data from [dummyjson.com](https://dummyjson.com/recipes/)
 
-<small>Images below are static links only</small>
-<!-- Full-width images -->
-<div class="wide-image">
-    <a href="./media/path-001/path-001-01.png" target="_blank">
-        <img src="./media/path-001/path-001-01.png" alt="Recipe list" />
+*Images below are static links only
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+    <a href="./media/path-001/path-001-01.png" target="_blank" style="display: flex; justify-content: center; align-items: center; max-height: 720px; box-sizing: border-box;">
+        <img src="./media/path-001/path-001-01.png" alt="Recipe list" style="max-width: 100%; max-height: 100%" />
     </a>
 </div>
-
-<!-- Grid of smaller images -->
-<div class="image-grid">
-    <a href="./media/path-001/path-001-02.png" target="_blank">
-        <img src="./media/path-001/path-001-02.png" alt="Media query medium" />
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+    <a href="./media/path-001/path-001-02.png" target="_blank" style="display: flex; justify-content: center; align-items: center;width: 150px; height: 150px; box-sizing: border-box;">
+        <img src="./media/path-001/path-001-02.png" alt="Media query medium" style="max-width: 100%; max-height: 100%"/>
     </a>
-    <a href="./media/path-001/path-001-03.png" target="_blank">
-        <img src="./media/path-001/path-001-03.png" alt="Media query small" />
+    <a href="./media/path-001/path-001-03.png" target="_blank" style="display: flex; justify-content: center; align-items: center;width: 150px; height: 150px; box-sizing: border-box;">
+        <img src="./media/path-001/path-001-03.png" alt="Media query small" style="max-width: 100%; max-height: 100%" />
     </a>
-    <a href="./media/path-001/path-001-04.png" target="_blank">
-        <img src="./media/path-001/path-001-04.png" alt="Filter on" />
+    <a href="./media/path-001/path-001-04.png" target="_blank" style="display: flex; justify-content: center; align-items: center;width: 150px; height: 150px; box-sizing: border-box;">
+        <img src="./media/path-001/path-001-04.png" alt="Image 4" style="max-width: 100%; max-height: 100%" />
     </a>
-    <a href="./media/path-001/path-001-05.png" target="_blank">
-        <img src="./media/path-001/path-001-05.png" alt="Recipe page" />
+    <a href="./media/path-001/path-001-05.png" target="_blank" style="display: flex; justify-content: center; align-items: center;width: 150px; height: 150px; box-sizing: border-box;">
+        <img src="./media/path-001/path-001-05.png" alt="Filtered recipes" style="max-width: 100%; max-height: 100%" />
     </a>
 </div>
-
-<style>
-    /* Grid layout for smaller images */
-    .image-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .image-grid a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 150px;
-        box-sizing: border-box;
-    }
-    .image-grid img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    /* Full-width layout for wide images */
-    .wide-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-    .wide-image img {
-        max-width: 100%;
-        height: auto;
-    }
-</style>
