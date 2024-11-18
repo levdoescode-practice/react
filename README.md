@@ -8,21 +8,13 @@ Simpler React projects with one or a few pages.
 * Data from [dummyjson.com](https://dummyjson.com/recipes/)
 
 *Images below are static links only
-[![Recipe list](./media/path-001/path-001-01.png 'Recipe list')](./media/path-001/path-001-01.png)
-
 <div>
-    <a href="./media/path-001/path-001-01.png">
-        <img src="./media/path-001/path-001-01.png" alt="Recipe list"/>
-    </a>
-    <a href="./media/path-001/path-001-01.png">
-        <img src="./media/path-001/path-001-01.png" alt="Recipe list"/>
-    </a>
+    <img src="./media/path-001/path-001-01.png" align="center" alt="Recipe list" />
 </div>
 
-<div>
-    <a><img src="./media/path-001/path-001-02.png" alt="Media query medium" width="150" height="150" /></a>
-    <a><img src="./media/path-001/path-001-03.png" alt="Media query small"  width="150" height="150"/></a>
-    <a><img src="./media/path-001/path-001-04.png" alt="Recipe page"        width="150" height="150" /></a>
-    <a><img src="./media/path-001/path-001-05.png" alt="Filtered recipes"   width="150" height="150"/>
-    </a>
+<div align="center">
+    <img src="./media/path-001/path-001-02.png" align="center" alt="Media query medium" width="150" height="141"  />
+    <img src="./media/path-001/path-001-03.png" align="center" alt="Media query small"  width="136" height="150" />
+    <img src="./media/path-001/path-001-04.png" align="center" alt="Recipe page"        width="150" height="84"  />
+    <img src="./media/path-001/path-001-05.png" align="center" alt="Filtered recipes"   width="150" height="84" />
 </div>
