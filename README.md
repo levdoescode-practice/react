@@ -1,5 +1,5 @@
 # React Pages
-Simpler React projects with one or a few pages.
+Projects with one or a few pages.
 
 ## [Recipes #1](https://github.com/levdoescode-practice/react/tree/path-001)
 * Simple recipe page design using [React](https://react.dev/) with [shadcn](https://ui.shadcn.com/) components,
