@@ -9,8 +9,7 @@ Simpler React projects with one or a few pages.
 
 *Images below are static links only
 [![Recipe list](./media/path-001/path-001-01.png 'Recipe list')](./media/path-001/path-001-01.png)
-[![Recipe list](./media/path-001/path-001-02.png 'Recipe list')](./media/path-001/path-001-02.png)
-![]
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
     <a href="./media/path-001/path-001-01.png">
         <img src="./media/path-001/path-001-01.png" alt="Recipe list"/>
@@ -19,7 +18,7 @@ Simpler React projects with one or a few pages.
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
     <a href="./media/path-001/path-001-02.png" target="_blank" width="150" height="150">
-        <img src="./media/path-001/path-001-02.png" alt="Media query medium" style="max-width: 100%; max-height: 100%"/>
+        <img src="./media/path-001/path-001-02.png" alt="Media query medium" width=150 height=150 />
     </a>
     <a href="./media/path-001/path-001-03.png" target="_blank" width="150" height="150">
         <img src="./media/path-001/path-001-03.png" alt="Media query small" width="150" height="150"/>
@@ -31,35 +30,3 @@ Simpler React projects with one or a few pages.
         <img src="./media/path-001/path-001-05.png" alt="Filtered recipes" style="max-width: 100%; max-height: 100%" />
     </a>
 </div>
-
-<table style="padding: 10px; margin:0; box-sizing: border-box">
-    <tr>
-        <td>
-            <a href="./media/path-001/path-001-01.png" target="_blank">
-                <img src="./media/path-001/path-001-01.png" alt="Recipe list" width="1280px" height="720px"/>
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="./media/path-001/path-001-01.png" target="_blank">
-                <img src="./media/path-001/path-001-01.png" alt="Media query medium" width="250px" height="84px"/>
-            </a>
-        </td>
-        <td>
-            <a href="./media/path-001/path-001-01.png" target="_blank">
-                <img src="./media/path-001/path-001-01.png" alt="Recipe list" width="250px" height="84px"/>
-            </a>
-        </td>
-        <td>
-            <a href="./media/path-001/path-001-01.png" target="_blank">
-                <img src="./media/path-001/path-001-01.png" alt="Recipe list" width="250px" height="84px"/>
-            </a>
-        </td>
-        <td>
-            <a href="./media/path-001/path-001-01.png" target="_blank">
-                <img src="./media/path-001/path-001-01.png" alt="Recipe list" width="250px" height="84px"/>
-            </a>
-        </td>
-    </tr>
-</table>
