@@ -14,13 +14,14 @@ Simpler React projects with one or a few pages.
     <a href="./media/path-001/path-001-01.png">
         <img src="./media/path-001/path-001-01.png" alt="Recipe list"/>
     </a>
+    <a href="./media/path-001/path-001-01.png">
+        <img src="./media/path-001/path-001-01.png" alt="Recipe list"/>
+    </a>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-    <a href="./media/path-001/path-001-02.png" target="_blank" width="150" height="150">
-        <img src="./media/path-001/path-001-02.png" alt="Media query medium" width=150 height=150 />
-    </a>
-    <a href="./media/path-001/path-001-03.png" target="_blank" width="150" height="150">
+<div>
+    <a><img src="./media/path-001/path-001-02.png" alt="Media query medium" width=150px height=150px /></a>
+    <a href="./media/path-001/path-001-03.png" target="_blank">
         <img src="./media/path-001/path-001-03.png" alt="Media query small" width="150" height="150"/>
     </a>
     <a href="./media/path-001/path-001-04.png" target="_blank" width="150" height="150">
