@@ -29,7 +29,7 @@ Projects with one or a few pages.
 </div>
 
 <div align="left">
-    <img src="./media/ts-path-001/modal-add.png" align="center" alt="Media query medium" width="276.66" height="276.66" />
-    <img src="./media/ts-path-001/modal-edit.png" align="center" alt="Media query small"  width="276.66" height="276.66" />
-    <img src="./media/ts-path-001/event-overflow.png" align="center" alt="Recipe page"        width="276.66" height="276.66"  />
+    <img src="./media/ts-path-001/modal-add.png" align="center" alt="Media query medium" width="273.33" height="273.33" />
+    <img src="./media/ts-path-001/modal-edit.png" align="center" alt="Media query small"  width="273.33" height="273.33" />
+    <img src="./media/ts-path-001/event-overflow.png" align="center" alt="Recipe page"        width="273.33" height="273.33"  />
 </div>
